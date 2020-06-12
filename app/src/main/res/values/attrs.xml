@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ui_HunterRadarView">
+        <!--边框宽度-->
+        <attr name="ui_stroke_width" format="dimension" />
+        <!--边框颜色-->
+        <attr name="ui_stroke_color" format="color" />
+        <!--内边框宽度-->
+        <attr name="ui_stroke_inside_width" format="dimension" />
+        <!--内边框颜色-->
+        <attr name="ui_stroke_inside_color" format="color" />
+        <!--内边框层数-->
+        <attr name="ui_stroke_inside_layer_count" format="integer" />
+        <!--是否连接中心点和角落-->
+        <attr name="ui_stroke_center_to_conner" format="boolean" />
+        <!--填充内容边界宽度-->
+        <attr name="ui_stroke_region_width" format="dimension" />
+        <!--填充内容边界颜色-->
+        <attr name="ui_stroke_region_color" format="color" />
+        <!--填充内容渐变起始颜色-->
+        <attr name="ui_region_start_color" format="color" />
+        <!--填充内容渐变结束颜色-->
+        <attr name="ui_region_end_color" format="color" />
+        <!--填充内容渐变中心x，默认1-->
+        <attr name="ui_region_center_x" format="float" />
+        <!--填充内容渐变中心y，默认1-->
+        <attr name="ui_region_center_y" format="float" />
+    </declare-styleable>
+
+
+</resources>
