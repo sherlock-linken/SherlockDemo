@@ -1,22 +1,20 @@
 package com.tanzy.sherlockdemo
 
-import android.app.Activity
-import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tanzy.sherlockdemo.entity.DemoEntity
 import com.tanzy.sherlockdemo.radar.RadarActivity
+import com.tanzy.sherlockdemo.stackpager.ViewPagerDemoActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
 
     private val demoList: ArrayList<DemoEntity> = arrayListOf()
     private val adapter by lazy { DemoAdapter() }
@@ -28,7 +26,12 @@ class MainActivity : Activity() {
         rcy_demos.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         rcy_demos.adapter = adapter
 
-        demoList.add(DemoEntity("hunterRadar", Intent(this,RadarActivity::class.java)))
+        btn_test.setOnClickListener {
+            adapter.notifyDataSetChanged()
+        }
+
+        demoList.add(DemoEntity("hunterRadar", Intent(this, RadarActivity::class.java)))
+        demoList.add(DemoEntity("viewPagerDemo", Intent(this, ViewPagerDemoActivity::class.java)))
 
     }
 
@@ -52,10 +55,7 @@ class MainActivity : Activity() {
 
 
     class DemoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        lateinit var name: TextView
+        var name: TextView = itemView.findViewById(R.id.tv_demo_name)
 
-        init {
-            name = itemView.findViewById<TextView>(R.id.tv_demo_name)
-        }
     }
 }

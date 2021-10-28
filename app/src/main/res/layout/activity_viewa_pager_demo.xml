@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/oldlace"
+        android:clipChildren="false">
+
+        <com.tanzy.sherlockdemo.stackpager.viewpager.ViewPagerSkip
+            android:id="@+id/viewPager01"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clipChildren="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/gainsboro"
+        android:clipChildren="true">
+
+        <com.tanzy.sherlockdemo.stackpager.viewpager.ViewPagerSkip
+            android:id="@+id/viewPager02"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clipChildren="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bisque"
+        android:clipChildren="false">
+
+        <com.tanzy.sherlockdemo.stackpager.viewpager.ViewPagerSkip
+            android:id="@+id/viewPager03"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clipChildren="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/beige"
+        android:clipChildren="false">
+
+        <com.tanzy.sherlockdemo.stackpager.viewpager.ViewPagerSkip
+            android:id="@+id/viewPager04"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clipChildren="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <com.tanzy.sherlockdemo.stackpager.viewpager.ViewPagerSkip
+            android:layout_marginTop="20dp"
+            android:id="@+id/viewPager05"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:clipChildren="false" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

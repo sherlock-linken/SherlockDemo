@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/githubProject/sherlockDemo/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/githubProject/sherlockDemo/app/src/main/res/layout/activity_stack_view_demo.xml" value="0.33" />
+        <entry key="..\:/githubProject/sherlockDemo/app/src/main/res/layout/activity_viewa_pager_demo.xml" value="0.17481884057971014" />
+        <entry key="..\:/githubProject/sherlockDemo/app/src/main/res/layout/item_vp.xml" value="0.1703125" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownNavigator.ProfileManager" plain-text-search-scope="Project Files" />
   <component name="MarkdownProjectSettings" wasCopied="true">
     <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" showGitHubPageIfSynced="false" allowBrowsingInPreview="false" synchronizePreviewPosition="true" highlightPreviewType="NONE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="false" showSelectionInPreview="true" openRemoteLinks="true" replaceUnicodeEmoji="false" lastLayoutSetsDefault="false">
